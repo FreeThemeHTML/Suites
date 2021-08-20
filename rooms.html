@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Suite — Colorlib Website Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1> -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Work+Sans:300,400,700"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/mediaelementplayer.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+         
+        window.onload = function count(){
+       // Set the date we're counting down to
+       var countDownDate = new Date("Aug 31, 2021 00:00:00").getTime();
+
+       // Update the count down every 1 second
+       var x = setInterval(function () {
+
+           // Get today's date and time
+           var now = new Date().getTime();
+
+           // Find the distance between now and the count down date
+           var distance = countDownDate - now;
+
+           // Time calculations for days, hours, minutes and seconds
+           var weeks = Math.floor(distance / (1000 * 60*60*24*7));
+           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+           // Output the result in an element with id="demo"
+           //   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+           //   + minutes + "m " + seconds + "s ";
+           var color = "white";
+           document.getElementById("weeks").innerHTML = weeks;
+           document.getElementById("weeks").style.color = color;    
+           document.getElementById("days").innerHTML = days;
+           document.getElementById("days").style.color = color;   
+           document.getElementById("hours").innerHTML = hours;
+           document.getElementById("hours").style.color = color;   
+           document.getElementById("minutes").innerHTML = minutes;
+           document.getElementById("minutes").style.color = color;   
+           document.getElementById("seconds").innerHTML = seconds;
+           document.getElementById("seconds").style.color = color;   
+           // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+           //     + minutes + "m " + seconds + "s ";
+
+           // If the count down is over, write some text 
+           if (distance < 0) {
+               clearInterval(x);
+               document.getElementById("demo").innerHTML = "EXPIRED";
+           }
+       }, 1000);
+   };
+
+   </script>  
+
+</head>
+
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+    <div class="site-wrap">
+        <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body">
+                <ul class="site-nav-wrap">
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="has-children active"><span class="arrow-collapse collapsed" data-toggle="collapse"
+                            data-target="#collapseItem0"></span>
+                        <a href="rooms.html">Rooms</a>
+                        <ul class="collapse" id="collapseItem0">
+                            <li><a href="rooms.html">Standard Room</a></li>
+                            <li><a href="rooms.html">Family Room</a></li>
+                            <li><a href="rooms.html">Single Room</a></li>
+                            <li class="has-children"><span class="arrow-collapse collapsed" data-toggle="collapse"
+                                    data-target="#collapseItem1"></span>
+                                <a href="rooms.html">Rooms</a>
+                                <ul class="collapse" id="collapseItem1">
+                                    <li><a href="rooms.html">America</a></li>
+                                    <li><a href="rooms.html">Europe</a></li>
+                                    <li><a href="rooms.html">Asia</a></li>
+                                    <li><a href="rooms.html">Africa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-navbar-wrap js-site-navbar bg-white">
+            <div class="container">
+                <div class="site-navbar bg-light">
+                    <div class="py-1">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <h2 class="mb-0 site-logo"><a href="index.html">Suites</a></h2>
+                            </div>
+                            <div class="col-10">
+                                <nav class="site-navigation text-right" role="navigation">
+                                    <div class="container">
+                                        <div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#"
+                                                class="site-menu-toggle js-menu-toggle"><span
+                                                    class="icon-menu h3"></span></a></div>
+                                        <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                            <li >
+                                                <a href="index.html">Home</a>
+                                            </li>
+                                            <li class="has-children active">
+                                                <a href="rooms.html">Rooms</a>
+                                                <ul class="dropdown arrow-top">
+                                                    <li><a href="rooms.html">Standard Room</a></li>
+                                                    <li><a href="rooms.html">Family Room</a></li>
+                                                    <li><a href="rooms.html">Single Room</a></li>
+                                                    <li class="has-children">
+                                                        <a href="rooms.html">Rooms</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="rooms.html">America</a></li>
+                                                            <li><a href="rooms.html">Europe</a></li>
+                                                            <li><a href="rooms.html">Asia</a></li>
+                                                            <li><a href="rooms.html">Africa</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="events.html">Events</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-blocks-cover overlay" style="background-image:url(images/hero_1.jpg)" data-aos="fade" data-stellar-background-ratio="0.5">
+            <div class="container">
+            <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center" data-aos="fade">
+            <span class="caption mb-3">Luxurious Rooms</span>
+            <h1 class="mb-4">Hotel Rooms</h1>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="site-section bg-light">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+            <h2 class="mb-5">Our Rooms</h2>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-6 col-lg-4 mb-5">
+            <div class="hotel-room text-center">
+            <a href="#" class="d-block mb-0 thumbnail"><script data-pagespeed-no-defer>//<![CDATA[
+            (function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}
+            var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;
+            function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}
+            function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),
+            b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});
+            function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=
+            new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}
+            function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});
+            u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();
+            
+            pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.com/theme/suites/rooms.html','-ilGEe-FWC',true,false,'WRnWZbjHs8Q');
+            //]]></script><img src="images/img_1.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="3036630142" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            <div class="hotel-room-body">
+            <h3 class="heading mb-0"><a href="#">Standard Room</a></h3>
+            <strong class="price">$350.00 / per night</strong>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+            <div class="hotel-room text-center">
+            <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="3331130063" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            <div class="hotel-room-body">
+            <h3 class="heading mb-0"><a href="#">Family Room</a></h3>
+            <strong class="price">$400.00 / per night</strong>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+            <div class="hotel-room text-center">
+            <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="3625629984" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            <div class="hotel-room-body">
+            <h3 class="heading mb-0"><a href="#">Single Room</a></h3>
+            <strong class="price">$255.00 / per night</strong>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+            <div class="hotel-room text-center">
+            <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_1.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="3036630142" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            <div class="hotel-room-body">
+            <h3 class="heading mb-0"><a href="#">Deluxe Room</a></h3>
+            <strong class="price">$150.00 / per night</strong>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+            <div class="hotel-room text-center">
+            <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_2.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="3331130063" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            <div class="hotel-room-body">
+            <h3 class="heading mb-0"><a href="#">Luxury Room</a></h3>
+            <strong class="price">$200.00 / per night</strong>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+            <div class="hotel-room text-center">
+            <a href="#" class="d-block mb-0 thumbnail"><img src="images/img_3.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="3625629984" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+            <div class="hotel-room-body">
+            <h3 class="heading mb-0"><a href="#">Single Room</a></h3>
+            <strong class="price">$155.00 / per night</strong>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="row mt-5">
+            <div class="col-md-12 text-center">
+            <div class="site-block-27">
+            <ul>
+            <li><a href="#">&lt;</a></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&gt;</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="footer-heading mb-4 text-white">About</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat
+                            amet.</p>
+                        <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Approach</a></li>
+                                    <li><a href="#">Sustainability</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="footer-heading mb-4 text-white">Ministries</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Children</a></li>
+                                    <li><a href="#">Women</a></li>
+                                    <li><a href="#">Bible Study</a></li>
+                                    <li><a href="#">Church</a></li>
+                                    <li><a href="#">Missionaries</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-md-12">
+                            <h3 class="footer-heading mb-4 text-white">Social Icons</h3>
+                        </div>
+                        <div class="col-md-12">
+                            <p>
+                                <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                                <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                                <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+                                <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <p>
+
+                            Copyright ©
+                            <script type="text/javascript" async=""
+                                src="https://www.google-analytics.com/analytics.js"></script>
+                            <script>document.write(new Date().getFullYear());</script> All Rights Reserved | This
+                            template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a
+                                href="#" target="_blank">ThienTran</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <!-- <script src="js/jquery.countdown.js"></script> -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        window.console.log("JQMIGRATE: Migrate is installed" +
+            (jQuery.migrateMute ? "" : " with logging active") +
+            ", version " + jQuery.migrateVersion);
+    </script>
+     
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+
+            for (var i = 0; i < total; i++) {
+                new MediaElementPlayer(mediaElements[i], {
+                    pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+                    shimScriptAccess: 'always',
+                    success: function () {
+                        var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+                        for (var j = 0; j < targetTotal; j++) {
+                            target[j].style.visibility = 'visible';
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="js/beacon.min.js"></script>
+    
+</body>
+
+</html>
